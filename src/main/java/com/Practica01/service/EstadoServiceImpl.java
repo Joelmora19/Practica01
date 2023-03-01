@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.Practica01.service;
 
 import com.Practica01.dao.estadoDao;
@@ -13,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Service
-public abstract class EstadoServiceImpl implements EstadoService{
+public class EstadoServiceImpl implements EstadoService{
     
     @Autowired
     estadoDao estadoDao;
@@ -44,4 +40,3 @@ public abstract class EstadoServiceImpl implements EstadoService{
    
     }
     
-
