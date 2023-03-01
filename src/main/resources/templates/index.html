@@ -11,13 +11,13 @@
         <a th:href="@{nuevoestado}">Nuevo Estado</a>
         <br/>
         <br/>
-        <div th:if="${clientes != null and !clientes.empty}">
+        <div th:if="${estado != null and !estado.empty}">
             <table border="1">
                 <thead>
-                <th>Nombre</th>
-                <th>apellidos</th>
-                <th>Correo</th>
-                <th>Telefono</th>
+                <th>Nombre del Estado</th>
+                <th>Capital</th>
+                <th>Poblacion</th>
+                <th>Costas</th>
                 <th colspan="2">Acciones</th>
                 </thead>
                 <tbody>
