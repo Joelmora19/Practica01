@@ -5,7 +5,7 @@
 
 /* Selector universal para definir un color de fondo */
 body {
-  background-color: #0000; /* Blanco ahumado */
+  background-color: #F5F5F5; /* Blanco ahumado */
 }
 
 h1 {
@@ -26,4 +26,3 @@ ul {
 li {
   color: #555; /* Color de texto gris */
 }
-

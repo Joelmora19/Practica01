@@ -31,22 +31,22 @@ public class IndexController {
         return "index";
     }
 @GetMapping("/nuevoEstado")
- public String nuevocliente(estado estado){
+ public String nuevoestado(estado estado){
  return "modificarEstado";
          }
  @PostMapping("guardarEstado")
- public String guardarCliente(estado cliente){
-     estadoService.save(cliente);
+ public String guardarEstado(estado estado){
+     estadoService.save(estado);
      return"redirect:/";
  }
  @GetMapping ("/modificarEstado/{idEstado}")
- public String modificarCliente(estado estado , Model model){
+ public String modificarEstado(estado estado , Model model){
      estado = estadoService.getEstado(estado);
-     model.addAttribute("cliente",estado);
-     return"modificarCliente";
+     model.addAttribute("estado",estado);
+     return"modificarEstado";
  }
   @GetMapping ("/eliminarEstado/{idEstado}")
- public String eliminarCliente(estado estado ){
+ public String eliminarEstado(estado estado ){
       estadoService.delete(estado);
      return"redirect:/";
  }
