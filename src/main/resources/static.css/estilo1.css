@@ -1,0 +1,29 @@
+/* Selector universal para definir un tipo de letra */
+*{
+  font-family: "Sam Serif", serif;
+}
+
+/* Selector universal para definir un color de fondo */
+body {
+  background-color: #0000; /* Blanco ahumado */
+}
+
+h1 {
+  color: #333; /* Color de texto oscuro */
+  font-size: 2em; /* Tamaño de letra grande */
+}
+
+p{
+  line-height: 1.5; /* Espacio entre líneas cómodo */
+  margin-bottom: 1em; /* Margen inferior para separar párrafos */
+}
+
+ul {
+  list-style: disc; /* Utilizar viñetas redondas */
+  margin-left: 1.5em; /* Margen izquierdo para separar de texto */
+}
+
+li {
+  color: #555; /* Color de texto gris */
+}
+

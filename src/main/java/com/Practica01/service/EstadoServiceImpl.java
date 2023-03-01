@@ -11,10 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- *
- * @author Monserrat Najera
- */
+
 @Service
 public abstract class EstadoServiceImpl implements EstadoService{
     
@@ -23,12 +20,12 @@ public abstract class EstadoServiceImpl implements EstadoService{
    
     @Override
     @Transactional(readOnly=true)
-    public List<estado> getClientes() {
+    public List<estado> getEstados() {
         return (List<estado>) estadoDao.findAll();
     }
 
     @Override
-    public estado getCliente(estado estado) {
+    public estado getEstado(estado estado) {
         return estadoDao.findById(estado.getIdEstado()).orElse(null);
     }
 

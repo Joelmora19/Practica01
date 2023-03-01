@@ -1,0 +1,35 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 feb 2023, 21:42:12
+    Author     : Usuario
+*/
+
+*{
+  font-family: "Sam Serif", serif;
+}
+
+/* Selector universal para definir un color de fondo */
+body {
+  background-color: #0000; /* Blanco ahumado */
+}
+h1 {
+  color: #333; /* Color de texto oscuro */
+  font-size: 2em; /* Tamaño de letra grande */
+}
+
+p{
+  line-height: 1.5; /* Espacio entre líneas cómodo */
+  margin-bottom: 1em; /* Margen inferior para separar párrafos */
+}
+
+ul {
+  list-style: disc; /* Utilizar viñetas redondas */
+  margin-left: 1.5em; /* Margen izquierdo para separar de texto */
+}
+
+li {
+  color: #555; /* Color de texto gris */
+}

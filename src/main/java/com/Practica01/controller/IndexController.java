@@ -13,24 +13,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-
-/**
- *
- * @author Monserrat Najera
- */
 @Slf4j
 @Controller
 public class IndexController {
     
   @Autowired
-   EstadoService EstadoeService;
+   EstadoService estadoService;
 
    @GetMapping("/")
     public String page(Model model) {
 
         log.info("Informacion de estados");
 
-        var estados = EstadoService.getEstados;
+        var estados = estadoService.getEstados();
         model.addAttribute("estados", estados);
 
         return "index";
@@ -41,18 +36,18 @@ public class IndexController {
          }
  @PostMapping("guardarEstado")
  public String guardarCliente(estado cliente){
-     EstadoService.save(estado);
+     estadoService.save(cliente);
      return"redirect:/";
  }
  @GetMapping ("/modificarEstado/{idEstado}")
  public String modificarCliente(estado estado , Model model){
-     estado = EstadoService.getEstado(estado);
+     estado = estadoService.getEstado(estado);
      model.addAttribute("cliente",estado);
      return"modificarCliente";
  }
   @GetMapping ("/eliminarEstado/{idEstado}")
  public String eliminarCliente(estado estado ){
-      EstadoService.delete(estado);
+      estadoService.delete(estado);
      return"redirect:/";
  }
 }

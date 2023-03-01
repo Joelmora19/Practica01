@@ -6,10 +6,7 @@ package com.Practica01.dao;
 
 import com.Practica01.domain.estado;
 import org.springframework.data.repository.CrudRepository;
-/**
- *
- * @author Monserrat Najera
- */
+
 public interface estadoDao extends CrudRepository<estado,Long> {
 }
     
