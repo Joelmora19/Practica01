@@ -7,15 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
 @Service
-public class EstadoServiceImpl implements EstadoService{
-    
+public class EstadoServiceImpl implements EstadoService {
+
     @Autowired
     estadoDao estadoDao;
-   
+
     @Override
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     public List<estado> getEstados() {
         return (List<estado>) estadoDao.findAll();
     }
@@ -28,7 +27,7 @@ public class EstadoServiceImpl implements EstadoService{
     @Override
     @Transactional
     public void save(estado estado) {
-       estadoDao.save(estado);
+        estadoDao.save(estado);
     }
 
     @Override
@@ -36,7 +35,4 @@ public class EstadoServiceImpl implements EstadoService{
     public void delete(estado estado) {
         estadoDao.deleteById(estado.getIdEstado());
     }
-
-   
-    }
-    
+}
